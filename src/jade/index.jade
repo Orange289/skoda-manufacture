@@ -1,0 +1,52 @@
+extends _layout
+include templates/_global_mixins
+include templates/_global_vars
+include templates/_project_mixins
+include templates/_project_vars
+block vars
+	- var array = {body_class:'', layout_mod:'', sub_keywords:'',title_inner:'Skoda Manufacture'}
+
+block favicons
+	- var arrayFav = {src_ico:'img/favicon.ico', src_png: 'img/favicon.png', src_apple: 'img/apple-touch-icon.png'}
+
+block intro_1
+	include blocks/intro_1
+
+block slider_1
+	include blocks/slider_1
+
+block text_1
+	include blocks/text-img_1
+
+block slider_2
+	include blocks/slider_2
+
+block text-img_2
+	include blocks/text-img_2
+
+block text-img_3
+	include blocks/text-img_3
+
+block anchors
+	include blocks/anchors
+
+block intro_2
+	include blocks/intro_2
+
+block slider_3
+	include blocks/slider_3
+
+block text_2
+	include blocks/text_2
+
+block slider_4
+	include blocks/slider_4
+
+block text-img_4
+	include blocks/text-img_4
+
+block text_3
+	include blocks/text_3
+
+block text-img_5
+	include blocks/text-img_5

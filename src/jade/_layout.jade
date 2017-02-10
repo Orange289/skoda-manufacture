@@ -1,0 +1,35 @@
+include templates/_global_vars
+include templates/_global_mixins
+include templates/_project_mixins
+include templates/_project_vars
+- var array = '';
+- var arrayFav = '';
+
+block vars
+block favicons
+doctype
+html(lang='ru')
+	head
+		+ head(array,arrayFav)
+	body(class='#{array.body_class}')
+		.wrapper
+			+ header
+			main.page_main(class='#{array.layout_mod}')
+				section.common
+					block intro_1
+					block slider_1
+					block text_1
+					block text-img_1
+					block slider_2
+					block text-img_2
+					block text-img_3
+				block anchors
+				section.places
+					block intro_2
+					block slider_3
+					block text_2
+					block slider_4
+					block text-img_4
+					block text_3
+					block text-img_5
+			+ scripts
